@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="js/cambiarPestanna.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="icon" href="OIG-imageonline.co-3001050.png">
+</head>
+<body>
+    <link rel="stylesheet" href="estilos.css">
+    <header>
+        <nav id="navbar">
+            <ul>
+                <img src="OIG-imageonline.co-3001050.png" alt="Charly's Blog" id="imagen_baner">
+                <li><a href="index.html" class="seleccionado">inicio</a></li>
+                <li><a href="myinformation.html" class="seleccionado">¿Quién soy?</a></li>
+                <li><a href="carpeta.html" class="seleccionado">Carpeta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="proyect">
+        <h3>Proyectos</h3>
+        <p>
+            Por mi parte, he participado en varios proyectos, tanto personales como en proyectos de
+            otras compañías:
+        </p>
+        <li>
+            Desarrollo de la página web de Cheesse's Pizza
+        </li>
+        <li>
+            Mantenimiento de las páginas del Gobierno de México
+        </li>
+        <li>
+            Participación en el desarrollo de varios videojuegos de estudios independientes
+        </li>
+
+    </div>
+    <div class="contenedor">
+        <div id="pestanas">
+            <ul id=lista>
+                <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Páginas Web</a></li>
+                <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Programas con C++</a></li>
+            </ul>
+        </div>
+        <body onload="javascript:cambiarPestanna(pestanas,pestana1);">
+        <div id="contenidopestanas">
+            <div id="cpestana1">
+                <h4>Wareframe de Advance Wars</h4>
+                <img src="wareframe_ADW.jpeg">
+                <h4>Landing page de Chesse's Pizza</h4>
+                <img src="Landing_Chs.jpeg">              
+            </div>
+            <div id="cpestana2">
+                <h3>Prácticas de C++</h3>
+                <div>
+                    <img src="algoritmos 1.jpeg">
+                    <img src="algoritmos 2.jpeg">
+                    <img src="algoritmos 3.jpeg">
+                    <img src="algoritmos 4.jpeg">
+                    <img src="algoritmos 5.jpeg">
+                    <img src="algoritmos 6.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="foot_of_page" id="foot_of_page3">
+            <img src="kirby face.png" id="kirby_face">
+            <p>
+                Página hecha por Molina Mendoza Carlos Fabricio, del 1ro A de Ingeniería en Desarrollo
+                de Software.
+            </p>
+            <p>©2023 Carlos Fabricio Molina Mendoza</p>
+        </div>
+    </section>
+    <script src="tab.js"></script>
+</body>
+</html>
